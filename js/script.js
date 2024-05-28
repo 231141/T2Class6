@@ -65,10 +65,14 @@ function increaseSaturn(){
 }
 
 let totalMarsCost = 0;
+let totalSaturnCost = 0;
+let finalCost = 0;
 
 function total(){
     totalMarsCost = parseInt(document.getElementById('ticketsMars').value) * 50;
-    document.getElementById('total').innerHTML = "R " + totalMarsCost;
+    totalSaturnCost = parseInt(document.getElementById('ticketsSaturn').value) * 70;
+    finalCost = totalMarsCost + totalSaturnCost;
+    document.getElementById('total').innerHTML = "R " + finalCost;
 }
 
 
